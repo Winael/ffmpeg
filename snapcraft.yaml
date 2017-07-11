@@ -8,7 +8,7 @@ parts:
   ffmpeg:
     build-packages: [git, g++, make, yasm, autoconf, libtool, cmake, pkg-config, automake, build-essential, libass-dev, libfreetype6-dev, libsdl1.2-dev, libtheora-dev, libva-dev, libvdpau-dev, libvorbis-dev, libxcb1-dev, libxcb-shm0-dev, libxcb-xfixes0-dev, texinfo, zlib1g-dev, libx264-dev, libmp3lame-dev, libopus-dev, libx265-dev, libvpx-dev]
     plugin: autotools
-    configflags: [--enable-gpl, --enable-libass, --enable-libfreetype, --enable-libmp3lame, --enable-libopus, --enable-libtheora, --enable-libv
+    configflags: [--prefix=/usr, --enable-gpl, --enable-libass, --enable-libfreetype, --enable-libmp3lame, --enable-libopus, --enable-libtheora, --enable-libv
 orbis, --enable-libvpx, --enable-libx264, --enable-libx265, --enable-nonfree]
     source: git://source.ffmpeg.org/ffmpeg.git
     source-type: git
